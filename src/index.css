@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family:"Josefin Sans", sans-serif; 
+  src: url(/Coinmaze/node_modules/@fontsource/josefin-sans/300.css);
+}
+html{
+  background-color: #35445E;
+}
+#root{
+  height: 100%;
+  background-color: #35445E;
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: whitesmoke;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+
+}
+
+a{
+  text-decoration: none;
+  color: gold;
+}
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  height:max-content;
+  background-color: #35445E;
+}
+.chakra-ui-light{
+  background-color: transparent;
+}

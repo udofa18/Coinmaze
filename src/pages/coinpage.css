@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.button{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.sidebar{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    border-right: 2px solid gold;
+
+    
+  
+
+}
+.coindata1{
+    display: flex;
+    align-items: center;
+}

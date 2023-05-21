@@ -99,6 +99,7 @@ const CoinsTable = () => {
               hover
               variant="dark"
               className="p-3"
+              responsive
             >
               <thead>
                 <tr style={{ backgroundColor: "gold", color: "gold" }}>

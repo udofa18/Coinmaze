@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { CryptoState } from "../CryptoContext";
 import axios from "axios";
+import "./listCoin.css";
 
 const ListCoins = () => {
   const [coin, setCoin] = useState("");
@@ -25,9 +26,12 @@ const ListCoins = () => {
   console.log(exchange);
 
   return (
-    <div style={{display:"flex", justifyContent:"space-around", padding:"5%"}}>
+    <div
+      style={{ display: "flex", justifyContent: "space-around", padding: "5%" }}
+      className="mobile"
+    >
       <Card
-        style={{ width: "18rem", backgroundColor: "#2B2E31", padding: "10px" }}
+        style={{ width: "50%", backgroundColor: "#2B2E31", padding: "10px", margin: "20px" }} className="mobile"
       >
         <Card.Header style={{ fontSize: "1rem", textAlign: "left" }}>
           Trending Coins
@@ -45,11 +49,7 @@ const ListCoins = () => {
                     color: "gold",
                   }}
                 >
-                <img
-                    src={coin.item.thumb}
-                    style={{ paddingRight:"10px"}}
-
-                />
+                  <img src={coin.item.thumb} style={{ paddingRight: "10px" }} />
 
                   {coin.item.id}
                 </ListGroup.Item>
@@ -59,52 +59,56 @@ const ListCoins = () => {
       </Card>
 
       <Card
-        style={{ width: "40rem", backgroundColor: "#2B2E31", padding: "10px" }}
+        style={{ width: "50%", backgroundColor: "#2B2E31", padding: "20px" , margin: "20px", }} className="mobile"
       >
         <Card.Header style={{ fontSize: "1rem", textAlign: "left" }}>
-          Exchange list 
+          Exchange list
         </Card.Header>
         <ListGroup variant="flush">
           {exchange &&
             exchange.map((exchange) => (
               <>
                 <ListGroup.Item
+                className="mobile"
                   style={{
                     backgroundColor: "#2A2D31",
                     fontSize: "15px",
                     textAlign: "left",
                     textTransform: "capitalize",
                     color: "gold",
-                    display:"flex"
+                    display: "flex",
                   }}
                 >
-                <a href={exchange.url}>
-                
-                <img
-                    src={exchange.image}
-                    style={{ paddingRight:"10px"}}
-                    height= "20"
+                  <a href={exchange.url} className="mobile2">
+                   <div>
+                    <img
+                      src={exchange.image}
+                      style={{ paddingRight: "10px" }}
+                      height="20"
+                    />
 
-                />
-
-                  {exchange.name}
-                  <span style={{marginLeft:"40px", color:"silver"}}>
-                  Trade Volume (btc) :
-                  <span style={{marginLeft:"10px"}}>
-                  { exchange.trade_volume_24h_btc
-
-}                 </span>
-<span>
-  <span style={{marginLeft:"40px", color:"silver"}}>TSR :</span> {exchange.trust_score_rank
-}
-</span>
-</span>
-</a>
+                    {exchange.name}
+                    </div>
+                    <div style={{ marginLeft: "40px", color: "silver" }} className="mobile2">
+                    <div>
+                      Trade Volume (btc) :
+                      <span style={{ marginLeft: "10px" }}>
+                        {exchange.trade_volume_24h_btc}{" "}
+                      </span>
+                      </div>
+                      <div>
+                        <span style={{ color: "silver" }}>
+                          TSR:{exchange.trust_score_rank}
+                        </span>
+                      </div>
+                    </div>
+                  </a>
                 </ListGroup.Item>
               </>
             ))}
         </ListGroup>
       </Card>
+     
     </div>
   );
 };

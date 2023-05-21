@@ -1,0 +1,17 @@
+@media  (min-width: 350px) and (max-width:950px) {
+   .mobile{
+    display: block !important;
+    justify-items: center;
+    text-align: center;
+   margin: 0 auto !important;
+    }
+    .mobile1 li{
+        width: 100%;
+        padding: 10px;
+      
+    }
+}
+.mobile{
+    width: 100%;
+    display: flex;
+}

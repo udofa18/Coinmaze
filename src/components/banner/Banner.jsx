@@ -14,7 +14,7 @@ const Banner = () => {
       <i className="fas fa-coins"></i>
     
       Coin<span style={{ color: "gold" }}>Maze</span></h1>
-      <p style={{width:"40%", textAlign:"center", margin:"0 auto", marginBottom:"2rem"}}>Complete cryptocurrency market coverage with live coin prices, charts and crypto market cap featuring 24211 coins on 626 exchanges.</p>
+      <p style={{width:"50%", textAlign:"center", margin:"0 auto", marginBottom:"2rem"}}>Complete cryptocurrency market coverage with live coin prices, charts and crypto market cap featuring 24211 coins on 626 exchanges.</p>
       </div>
       
       <div className="carousel-con">

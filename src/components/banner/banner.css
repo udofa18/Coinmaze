@@ -24,3 +24,8 @@
     padding-top: 3rem;
     background-color: #1c1d26e2;
 }
+@media  (min-width: 350px) and (max-width:950px) {
+    .coinmaze{
+        font-size: 2rem;
+    }
+}

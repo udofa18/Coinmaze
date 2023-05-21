@@ -206,3 +206,9 @@
     position: relative;
     color: inherit;
   }
+  @media(min-width: 350px) and (max-width:950px) {
+    .br-title{
+      font-size: 12px !important;
+    font-weight: 700 !important;
+    }
+  }

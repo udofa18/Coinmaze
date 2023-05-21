@@ -1,0 +1,16 @@
+
+@media  (min-width: 350px) and (max-width:950px) {
+    .mobile{
+        display:inline-block !important;
+        margin:  auto !important;
+        width: 100% !important;
+        align-content: center;
+        margin-top: 10%!important;
+    }
+    .mobile2{
+        display:block!important;
+    }
+}
+.mobile2{
+    display:flex !important;
+}

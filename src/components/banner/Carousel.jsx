@@ -65,7 +65,7 @@ console.log(data)
   })
   const responsive ={
     0: {
-      items: 2,
+      items: 3,
     },
     512:{
       items: 6,
@@ -75,8 +75,8 @@ console.log(data)
     <AliceCarousel
       mouseTracking
       infinite
-      autoPlayInterval={500}
-      animationDuration={500}
+      autoPlayInterval={1000}
+      animationDuration={1000}
       disableDotsControls
       responsive={responsive}
       autoPlay

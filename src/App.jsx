@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Homepage from "./pages/Homepage";
 import Coinpage from "./pages/Coinpage";
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -4,12 +4,12 @@ import { CryptoState } from "../CryptoContext";
 import axios from "axios";
 import { makeStyles } from "@mui/styles";
 import { LinearProgress, Typography } from "@mui/material";
-import CoinInfo from "../components/coininfo";
+import CoinInfo from "../components/Coininfo";
 import { SingleCoin } from "../confg/api";
 import "../pages/coinpage.css";
 import { Button } from "react-bootstrap";
 import { numberWithCommas } from "../components/banner/Carousel";
-import MoreDetails from "../components/moreDetails";
+import MoreDetails from "../components/MoreDetails";
 
 const Coinpage = () => {
   const { id } = useParams();

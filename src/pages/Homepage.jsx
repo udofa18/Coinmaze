@@ -3,7 +3,7 @@ import Banner from '../components/banner/Banner'
 import CoinsTable from '../components/banner/CoinsTable'
 import NewsFlash from '../components/Newslash'
 import ListCoins from '../components/ListCoins'
-import NewsHandler from '../components/newsHandler'
+import NewsHandler from '../components/NewsHandler'
 
 const Homepage = () => {
   return (
